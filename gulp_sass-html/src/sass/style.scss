@@ -1,4 +1,6 @@
 // 旧sass
 // @import "./layout/body";
 // dart-sass
-@use "./layout/body";
+@use "./layout/reset";
+@use "./layout/header";
+
