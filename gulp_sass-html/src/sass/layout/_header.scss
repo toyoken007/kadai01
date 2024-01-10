@@ -1,6 +1,27 @@
-
-body {
-    width: 100%;
-    background: red;
-    height: 300px;
+header {
+    background: black;
+    display: flex;
+    height: 74px;
+    justify-content: center;
+    .header_box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 1203px;
+        color: #f5f5f5
+    }
+    .header_box h1 {
+        font-size: 24px;
+        font-weight: normal;
+    }
+    .header_nav ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        font-size: 16px;
+        column-gap: 55px;
+    }
+    .header_nav ul li {
+        font-size: 16px;
+    }
 }
