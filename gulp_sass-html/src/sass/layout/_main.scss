@@ -1,3 +1,5 @@
+@use "./variables" as var;
+
 //ファーストビュー
 .fv_box {
     position: relative;
@@ -56,5 +58,118 @@
             }
         }
     }
+}
 
+//service
+.service {
+    margin-top: 150px;
+
+    h2 {
+        font-family: var.$main-font;
+        text-align: center;
+        font-size: 36px;
+        font-weight: normal;
+        letter-spacing: 1px;
+    }
+
+    .img_box_up {
+        font-family: var.$text-font;
+        display: flex;
+        margin: 70px auto 0;
+        width: 1030px;
+        column-gap: 70px;
+
+        img {
+            display: block;
+            width: 480px;
+        }
+
+        figcaption {
+            width: 480px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            row-gap: 40px;
+
+            h3 {
+                font-size: 24px;
+                line-height: 48px;
+                letter-spacing: 2.8px;
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: bold;
+                line-height: 30px;
+                letter-spacing: 1px;
+            }
+        }
+    }
+
+    .img_box_down {
+        font-family: var.$text-font;
+        display: flex;
+        margin: 50px auto 0;
+        width: 1030px;
+        column-gap: 70px;
+
+        img {
+            display: block;
+            width: 480px;
+        }
+
+        figcaption {
+            width: 480px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            row-gap: 40px;
+
+            h3 {
+                font-size: 24px;
+                line-height: 48px;
+                letter-spacing: 2.8px;
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: bold;
+                line-height: 30px;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}
+
+//news
+.news {
+    margin-top: 150px;
+
+    h2 {
+        font-family: var.$main-font;
+        text-align: center;
+        font-size: 36px;
+        font-weight: normal;
+        letter-spacing: 1px;
+    }
+
+    .news_box {
+        display: flex;
+        justify-content: center;
+        column-gap: 34px;
+        margin-top: 70px;
+
+        figure {
+            width: 320px;
+            height: 323px;
+
+            figcaption {
+                width: 254px;
+                font-size: 13px;
+                margin: 26px auto 25px;
+                line-height: 25px;
+                font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+            }
+        }
+    }
 }
