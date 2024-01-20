@@ -168,8 +168,72 @@
                 font-size: 13px;
                 margin: 26px auto 25px;
                 line-height: 25px;
-                font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+                // font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+                font-family: var.$hira-w6-font;
+                letter-spacing: -1.5px;
             }
+        }
+    }
+}
+
+//お問い合わせ
+.form {
+    margin-top: 150px;
+
+    h2 {
+        font-family: var.$noto-font;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+    .form_box {
+        display: flex;
+        flex-direction: column;
+        row-gap: 22px;
+        margin-top: 67px;
+        .nyuryoku {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            width: 700px;
+            p {
+                font-family: var.$hira-w3-font;
+                text-align: left;
+                font-size: 16px;
+            }
+            input {
+                width: 700px;
+                height: 30px;
+            }
+        }
+        .toi {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            width: 700px;
+            p {
+                font-family: var.$hira-w3-font;
+                text-align: left;
+                font-size: 16px;
+            }
+            input {
+                width: 700px;
+                height: 171px;
+            }
+        }
+        .submit {
+            display: block;
+            width: 235px;
+            height: 59px;
+            background: var.$header-background;
+            color: var.$color-white;
+            margin: 0 auto;
+            border-radius: 51px;
+            box-shadow: inset 0 0 6px #1B1310;
+            font-size: 20px;
+            margin-top: 28px;
         }
     }
 }
