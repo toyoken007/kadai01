@@ -23,6 +23,10 @@
     }
 }
 
+.fv_sp_box {
+    display: none;
+}
+
 //About
 .about {
     width: 1030px;
@@ -102,6 +106,9 @@
                 font-weight: bold;
                 line-height: 30px;
                 letter-spacing: 1px;
+                br {
+                    display: none;
+                }
             }
         }
     }
@@ -234,6 +241,120 @@
             box-shadow: inset 0 0 6px #1B1310;
             font-size: 20px;
             margin-top: 28px;
+            &:hover {
+                cursor:pointer;
+            }
         }
     }
+}
+
+@media screen and (max-width:375px) {
+    .fv_box {
+        display: none;
+    }
+    .fv_sp_box {
+        display: block;
+        position: relative;
+    
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    
+        .fv_comment {
+            position: absolute;
+            content: "";
+            width: 300px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #f5f5f5;
+            font-size: 30px;
+            padding: 30px 40px 30px 41px;
+            border: 2px solid;
+            border-color: #f5f5f5;
+        }
+    }
+    .about {
+        width: 345px;
+    }
+    .service {
+        width: 345px;
+        margin: 150px auto 0;
+        .img_box_up {
+            display: flex;
+            flex-direction: column;
+            width: initial;
+            img {
+                order: 2;
+                width: 345px;
+                margin-top: 40px;
+            }
+            figcaption {
+                row-gap: 30px;
+                width: 345px;
+                order: 1;
+                h3 {
+                    font-size: 20px;
+                }
+                p {
+                    width: 345px;
+                    br {
+                        display: block;
+                    }
+                }
+            }
+        }
+        .img_box_down {
+            display: block;
+            width: 345px;
+            figcaption {
+                width: 345px;
+                row-gap: 30px;
+                h3 {
+                    font-size: 20px;
+                }
+                p {
+                    width: 345px;
+                }
+            }
+            img {
+                width: 345px;
+                margin-top: 40px;
+            }
+        }
+    }
+    .news {
+        width: 345px;
+        margin: 150px auto 0;
+        .news_box {
+            flex-direction: column;
+            row-gap: 50px;
+            figure {
+                margin: 0 auto;
+            }
+        }
+    }
+    .form {
+        // display: none;
+        width: 345px;
+        margin: 150px auto 0;
+        .form_box {
+            .nyuryoku {
+                text-align: left;
+                width: initial;
+                input {
+                    width: 345px;
+                }
+            }
+            .toi {
+                text-align: left;
+                width: inherit;
+                input {
+                    width: 345px;
+                }
+            }
+        }
+    }
+
 }
