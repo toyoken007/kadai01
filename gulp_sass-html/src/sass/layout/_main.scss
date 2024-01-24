@@ -5,8 +5,7 @@
     position: relative;
 
     img {
-        height: 740px;
-        width: 100vw;
+        width: 100%;
     }
 
     .fv_comment {
@@ -29,7 +28,8 @@
 
 //About
 .about {
-    width: 1030px;
+    max-width: 1030px;
+    width: 100%;
     margin: 100px auto 0;
 
     h2 {
@@ -66,7 +66,9 @@
 
 //service
 .service {
-    margin-top: 150px;
+    max-width: 1030px;
+    width: 100%;
+    margin: 150px auto 0;
 
     h2 {
         font-family: var.$main-font;
@@ -85,7 +87,7 @@
 
         img {
             display: block;
-            width: 480px;
+            width: 100%;
         }
 
         figcaption {
@@ -122,7 +124,7 @@
 
         img {
             display: block;
-            width: 480px;
+            width: 100%;
         }
 
         figcaption {
@@ -150,7 +152,9 @@
 
 //news
 .news {
-    margin-top: 150px;
+    margin: 150px auto 0;
+    max-width: 1030px;
+    width: 100%;
 
     h2 {
         font-family: var.$main-font;
@@ -185,7 +189,9 @@
 
 //お問い合わせ
 .form {
-    margin-top: 150px;
+    margin: 150px auto 0;
+    max-width: 1030px;
+    width: 100%;
 
     h2 {
         font-family: var.$noto-font;
@@ -213,6 +219,8 @@
             input {
                 width: 700px;
                 height: 30px;
+                border: 1px solid;
+
             }
         }
         .toi {
@@ -225,9 +233,12 @@
                 text-align: left;
                 font-size: 16px;
             }
-            input {
+            textarea {
                 width: 700px;
                 height: 171px;
+                border: 1px solid;
+                resize: none;
+                font-size: 20px;
             }
         }
         .submit {
@@ -248,7 +259,7 @@
     }
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:768px) {
     .fv_box {
         display: none;
     }
@@ -287,7 +298,7 @@
             width: initial;
             img {
                 order: 2;
-                width: 345px;
+                width: 100%;
                 margin-top: 40px;
             }
             figcaption {
@@ -319,7 +330,7 @@
                 }
             }
             img {
-                width: 345px;
+                width: 100%;
                 margin-top: 40px;
             }
         }
@@ -350,7 +361,7 @@
             .toi {
                 text-align: left;
                 width: inherit;
-                input {
+                textarea {
                     width: 345px;
                 }
             }
