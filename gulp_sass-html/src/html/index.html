@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex , nofollow">
   <title>Document</title>
   <link rel="stylesheet" href="./css/slick/slick.css">
   <link rel="stylesheet" href="./css/slick/slick-theme.css">
@@ -10,10 +12,111 @@
   <script src="./js/jquery/jquery.min.js"></script>
   <script src="./js/main.js" type="module" defer></script>
 </head>
+
 <body>
-  <div class="content">
-    <p class="def">こんばんわ。こんにちはぺぺぺぺぺぺぺぺぺぺ</p>
-  </div>
-  <h1 class="abc" id="id">こんにちは、そろそろ寝る時間です。おやすみなさい。</h1>
+  <header>
+    <div class="header_box">
+      <h1>クリ★スタ</h1>
+      <nav class="header_nav" id="js_nav">
+        <ul class="nav_ul">
+          <li><a href="">About</a></li>
+          <li><a href="">Service</a></li>
+          <li><a href="">News</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="openbtn" id="js-hamburger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+    </div>
+  </header>
+  <main>
+    <figure class="fv_box">
+      <img src="../assets/common/images/fv-bgi@2x.jpg" alt="">
+      <figcaption class="fv_comment">Cresta Design.</figcaption>
+    </figure>
+    <figure class="fv_sp_box">
+      <img src="../assets/common/images/fv-bgi_sp@2x.jpg" alt="">
+      <figcaption class="fv_comment">Cresta Design.</figcaption>
+    </figure>
+    <section class="about">
+      <h2>About</h2>
+      <div class="about_wrap">
+        <div class="about_comment">
+          <p>ミニマルで<br>
+            洗練されたデザインを。</p>
+        </div>
+        <div class="about_comment_sub">
+          <p>
+            近年、ミニマルなデザインが流行しています。そこで弊社では、クライアント企業様新規サービス等の課題に対してミニマルで洗練されたデザインを実現させることで解決のサポートを致します。もちろん全てのサービスにおいてミニマルなデザインが課題解決になるわけではないので、課題や今後のサービスの展開等しっかりとヒアリングを行なった上でご提案させて頂きます。
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="service">
+      <h2>Service</h2>
+      <figure class="img_box_up">
+        <img src="../assets/common/images/service-image@2x.jpg" alt="">
+        <figcaption>
+          <h3>リリース時のサポートで<br>
+            サービスのブランディングを</h3>
+          <p>弊社では、リリース時もサポートさせて頂きます。プレスリリース用のサイトや動画制作を通して、<br>サービスのブランディングを行わせて頂きます。</p>
+        </figcaption>
+      </figure>
+      <figure class="img_box_down">
+        <figcaption>
+          <h3>リリース後のサポートで<br>
+            効果を最大化させる</h3>
+          <p>弊社では、リリース後もサポートさせて頂きます。サービスはリリース後に様々な課題にぶつかります。そこでクライアント様と一緒に改善を行うことで、デザインの効果を最大化させます。</p>
+        </figcaption>
+        <img src="../assets/common/images/service-image02@2x.jpg" alt="">
+      </figure>
+    </section>
+    <section class="news">
+      <h2>News</h2>
+      <div class="news_box">
+        <figure>
+          <img src="../assets/common/images/card-image1@2x.jpg" alt="">
+          <figcaption>新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</figcaption>
+        </figure>
+        <figure>
+          <img src="../assets/common/images/card-image2@2x.jpg" alt="">
+          <figcaption>新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</figcaption>
+        </figure>
+        <figure>
+          <img src="../assets/common/images/card-image3@2x.jpg" alt="">
+          <figcaption>新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="form">
+      <h2>お問い合わせ</h2>
+      <form action="" class="form_box">
+        <label for="" class="nyuryoku">
+          <p>担当者名</p>
+          <input type="text" name="" value="">
+        </label>
+        <label for="" class="nyuryoku">
+          <p>電話番号</p>
+          <input type="text" name="" value="">
+        </label>
+        <label for="" class="nyuryoku">
+          <p>メールアドレス</p>
+          <input type="text" name="" value="">
+        </label>
+        <label for="" class="toi">
+          <p>お問い合わせ</p>
+          <textarea name="" id=""></textarea>
+        </label>
+        <input type="submit" name="" value="送信" class="submit">
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy;crest.design all rights reserved</p>
+  </footer>
 </body>
+
 </html>
